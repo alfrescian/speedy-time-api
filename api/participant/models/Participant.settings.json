@@ -1,0 +1,77 @@
+{
+  "connection": "default",
+  "collectionName": "participant",
+  "info": {
+    "name": "participant",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "firstName": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "yearOfBirth": {
+      "default": "",
+      "max": 2018,
+      "min": 1900,
+      "type": "integer"
+    },
+    "gender": {
+      "default": "",
+      "type": "enumeration",
+      "enum": [
+        "male",
+        "female"
+      ]
+    },
+    "streetName": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "streetNumber": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "zip": {
+      "default": "",
+      "type": "string"
+    },
+    "city": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "default": "de",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "de"
+      ]
+    },
+    "email": {
+      "default": "",
+      "type": "email",
+      "required": true
+    },
+    "mobile": {
+      "default": "",
+      "type": "string"
+    },
+    "contest": {
+      "model": "contest",
+      "via": "participant"
+    }
+  }
+}

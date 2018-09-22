@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "contest",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "fee": {
+      "default": "",
+      "type": "decimal",
+      "required": true
+    },
+    "startTime": {
+      "default": "",
+      "type": "date",
+      "required": true
+    },
+    "event": {
+      "model": "event",
+      "via": "contests"
+    },
+    "participant": {
+      "model": "participant",
+      "via": "contest"
+    }
+  }
+}

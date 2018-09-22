@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "event",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string",
+      "required": true
+    },
+    "headline": {
+      "default": "",
+      "type": "text"
+    },
+    "contests": {
+      "collection": "contest",
+      "via": "event"
+    }
+  }
+}
