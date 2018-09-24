@@ -13,7 +13,7 @@
         "password": "${process.env.DATABASE_PASSWORD || ''}"
       },
       "options": {
-        "ssl": true,
+        "ssl": false,
         "authenticationDatabase": "${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}"
       }
     }
